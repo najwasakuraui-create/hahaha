@@ -1,154 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belajar GitHub - Testing</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-        
-        .container {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            padding: 40px;
-            max-width: 600px;
-            width: 100%;
-        }
-        
-        h1 {
-            color: #333;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-        
-        .subtitle {
-            color: #666;
-            text-align: center;
-            margin-bottom: 30px;
-            font-size: 14px;
-        }
-        
-        .info-box {
-            background: #f8f9fa;
-            border-left: 4px solid #667eea;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 5px;
-        }
-        
-        .info-box h2 {
-            color: #667eea;
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-        
-        .info-box p {
-            color: #555;
-            line-height: 1.6;
-            margin-bottom: 10px;
-        }
-        
-        .student-info {
-            background: #e3f2fd;
-            border-left: 4px solid #2196F3;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 5px;
-        }
-        
-        .student-info h3 {
-            color: #1976D2;
-            margin-bottom: 10px;
-        }
-        
-        .student-info ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        .student-info li {
-            color: #555;
-            padding: 5px 0;
-            border-bottom: 1px solid #ddd;
-        }
-        
-        .student-info li:last-child {
-            border-bottom: none;
-        }
-        
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            color: #999;
-            font-size: 12px;
-        }
-        
-        .badge {
-            display: inline-block;
-            background: #4CAF50;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 12px;
-            margin-top: 10px;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UI World! — Info Fakultas & UKT</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="UI World! - Informasi fakultas, jurusan, dan UKT Universitas Indonesia.">
 </head>
 <body>
-    <div class="container">
-        <h1>🎓 Belajar GitHub</h1>
-        <p class="subtitle">Testing Repository untuk Mahasiswa</p>
-        
-        <div class="info-box">
-            <h2>📚 Tentang Project Ini</h2>
-            <p>Ini adalah repository testing untuk pembelajaran GitHub. Mahasiswa dapat menggunakan file ini untuk:</p>
-            <ul>
-                <li>✅ Belajar membuat commit</li>
-                <li>✅ Melakukan push ke repository</li>
-                <li>✅ Membuat branch baru</li>
-                <li>✅ Melakukan merge</li>
-                <li>✅ Berkolaborasi dengan tim</li>
-            </ul>
-        </div>
-        
-        <div class="student-info">
-            <h3>👨‍🎓 Informasi Mahasiswa</h3>
-            <ul>
-                <li><strong>Nama:</strong> Najwa Sakura Affan</li>
-                <li><strong>NIM:</strong> 2506543294</li>
-                <li><strong>Kelas:</strong> TI-2025-B</li>
-                <li><strong>Mata Kuliah:</strong> Teknologi Informasi</li>
-            </ul>
-            <span class="badge">Status: Aktif</span>
-        </div>
-        
-        <div class="info-box">
-            <h2>💡 Tips Belajar GitHub</h2>
-            <p>1. Selalu buat commit dengan pesan yang jelas</p>
-            <p>2. Pull terlebih dahulu sebelum push</p>
-            <p>3. Gunakan branch untuk fitur baru</p>
-            <p>4. Jangan lupa dokumentasi di README.md</p>
-        </div>
-        
-        <div class="footer">
-            <p>© 2025 TI-2025-B | Belajar GitHub untuk Mahasiswa</p>
-        </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">UI World!</h1>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#faculties" class="nav-link">Faculties</a>
+        <a href="#ukt" class="nav-link">UKT</a>
+        <a href="#more" class="nav-link">More</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="darkToggle" class="btn small">Dark</button>
+        <button id="playBtn" class="btn small">Play Song!!</button>
+      </div>
     </div>
+  </header>
+
+  <main>
+    <!-- HOME / HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <h2>Explore UI World!</h2>
+        <p class="lead">Panduan ringkas fakultas, jurusan, dan estimasi UKT Universitas Indonesia.</p>
+        <div class="hero-ctas">
+          <a class="btn" href="#faculties">Explore Faculties</a>
+          <a class="btn ghost" href="#ukt">Lihat UKT</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h3>About UI</h3>
+        <div class="grid-2">
+          <p>
+            Universitas Indonesia (UI) adalah salah satu perguruan tinggi negeri terkemuka di Indonesia.
+            Situs ini menyajikan ringkasan fakultas, program studi, dan informasi UKT untuk membantu calon mahasiswa menentukan pilihan.
+          </p>
+          <div class="card">
+            <img alt="Gedung UI placeholder" src="https://via.placeholder.com/400x200?text=UI+Campus" />
+            <small>Foto ilustrasi kampus UI</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FACULTIES -->
+    <section id="faculties" class="section">
+      <div class="container">
+        <h3>Faculties & Programs</h3>
+        <p class="muted">Klik sebuah fakultas untuk melihat jurusan dan deskripsinya.</p>
+
+        <div id="facultyList" class="accordion">
+
+          <!-- Example faculty item (JS will populate more if needed) -->
+          <div class="accordion-item">
+            <button class="accordion-btn">Fakultas Ilmu Administrasi</button>
+            <div class="accordion-panel">
+              <p class="faculty-desc">
+                Fokus pada administrasi publik, bisnis, dan fiskal. Menyiapkan lulusan untuk karier di pemerintahan, perusahaan, dan lembaga keuangan.
+              </p>
+              <ul class="program-list">
+                <li>Ilmu Administrasi Negara S1</li>
+                <li>Ilmu Administrasi Niaga S1</li>
+                <li>Ilmu Administrasi Fiskal S1</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-btn">Fakultas Teknik</button>
+            <div class="accordion-panel">
+              <p class="faculty-desc">
+                Menyediakan pendidikan teknik di berbagai bidang seperti Elektro, Sipil, Mesin, dan Informatika.
+              </p>
+              <ul class="program-list">
+                <li>Teknik Mesin S1</li>
+                <li>Teknik Sipil S1</li>
+                <li>Teknik Elektro S1</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-btn">Fakultas Ilmu Komputer</button>
+            <div class="accordion-panel">
+              <p class="faculty-desc">
+                Fokus pada ilmu komputer, sistem informasi, dan teknologi digital.
+              </p>
+              <ul class="program-list">
+                <li>Ilmu Komputer S1</li>
+                <li>Sistem Informasi S1</li>
+                <li>Teknologi Informasi S1</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- UKT -->
+    <section id="ukt" class="section section-ukt">
+      <div class="container">
+        <h3>Estimasi UKT per Program Studi</h3>
+        <p class="muted">Data contoh — pastikan mengganti dengan data resmi saat submit</p>
+
+        <div class="grid-3 ukt-grid">
+          <div class="card ukt-card">
+            <h4>Ilmu Komputer S1</h4>
+            <p class="ukt-range">UKT: Rp 500.000 - Rp 4.000.000</p>
+          </div>
+          <div class="card ukt-card">
+            <h4>Ilmu Administrasi Negara S1</h4>
+            <p class="ukt-range">UKT: Rp 200.000 - Rp 2.500.000</p>
+          </div>
+          <div class="card ukt-card">
+            <h4>Teknik Sipil S1</h4>
+            <p class="ukt-range">UKT: Rp 300.000 - Rp 3.000.000</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MORE / CONTACT -->
+    <section id="more" class="section">
+      <div class="container">
+        <h3>More Information</h3>
+        <p>For further information, follow UI on social media:</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/universitas.indonesia/" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://twitter.com/universitas_ind" target="_blank" rel="noreferrer">X (Twitter)</a>
+          <a href="https://www.youtube.com/user/UniversitasIndonesia" target="_blank" rel="noreferrer">YouTube</a>
+          <a href="https://www.ui.ac.id/" target="_blank" rel="noreferrer">Official Site</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© UI World! — Project untuk UAS Teknologi Informasi. dibuat oleh tim.</p>
+    </div>
+  </footer>
+
+  <!-- Audio (anthem) - placeholder file, upload anthem.mp3 ke repo root atau ganti src -->
+  <audio id="anthemAudio" src="anthem.mp3" preload="none"></audio>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
